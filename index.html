@@ -8,16 +8,37 @@
     <title>Document</title>
 </head>
 <body>
-    
+ 
+    <form>
 <h1>Input Suggestion here</h1>
-<input type="checkbox" id="vehicle1" name="vehicle1"> 
-<label for="vehicle1"> Vegan</label> <br>
-
-<input type="checkbox" id="vehicle2" name="vehicle2"> 
-<label for="vehicle2"> Kosher</label>
-
+<input type="checkbox" id="kosher" value="kosher" class="filter"> Kosher
+ <input type="checkbox" id="vegan"  value="vegan" class="filter">Vegan
+ <input type="checkbox" id="halal"  value="halal" class="filter">Halal
+ <input type="checkbox" id="Vegetarian"  value="vegetarian" class="filter">Vegetarian
 
 
+<h2> Zipcode</h2>
+<input type="number" id="zipcode">
+<label for="zipcode"></label>
+<input type="submit" id="submit">
+
+</form> 
+
+
+<h3>Possible filters we can use</h3>
+<a href="https://www.yelp.com/developers/documentation/v3/all_category_list" target="_blank"> Scroll to the restaurants section</a>
+
+
+<table class= "yelpTable">
+    <tr>
+        <th>Name</th>
+        <th>Picture</th>
+        <th>Address</th>
+    </tr>
+</table>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./Assets/script.js"></script>
 </body>
 </html>
