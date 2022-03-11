@@ -4,9 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chowhounds</title>
+    <link rel="stylesheet" href="./Assets/style.css">
+    <title>Document</title>
 </head>
 <body>
-    <h1>Chowhounds</h1>
+ 
+    <form>
+<h1>Input Suggestion here</h1>
+<input type="checkbox" id="kosher" value="kosher" class="filter"> Kosher
+ <input type="checkbox" id="vegan"  value="vegan" class="filter">Vegan
+ <input type="checkbox" id="halal"  value="halal" class="filter">Halal
+ <input type="checkbox" id="Vegetarian"  value="vegetarian" class="filter">Vegetarian
+
+
+<h2> Zipcode</h2>
+<input type="number" id="zipcode">
+<label for="zipcode"></label>
+<input type="submit" id="submit">
+
+</form> 
+
+
+<h3>Possible filters we can use</h3>
+<a href="https://www.yelp.com/developers/documentation/v3/all_category_list" target="_blank"> Scroll to the restaurants section</a>
+
+
+<table class= "yelpTable">
+    <tr>
+        <th>Name</th>
+        <th>Picture</th>
+        <th>Address</th>
+    </tr>
+</table>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./Assets/script.js"></script>
 </body>
 </html>
+
+
