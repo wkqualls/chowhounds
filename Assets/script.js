@@ -37,8 +37,8 @@ function getYelp() {
             Address.text(yelpResults[i].location.address1)
             Picture.prepend(`<img src=${yelpResults[i].image_url} />`)
             yelpTable.append(tr)
-            tr.append(Name)
             tr.append(Picture)
+            tr.append(Name)
             tr.append(Address)
           }
         })
