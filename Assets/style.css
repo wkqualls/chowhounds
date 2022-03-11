@@ -1,8 +1,43 @@
 body{
-    margin: 0;
-  } 
-  .header, .footer{
-    height: 50px;
-    background: #666;
-    color: #fff;
-  }
+  margin: 0;
+  font-family: 'Barlow', sans-serif;
+} 
+
+.header, .footer{
+  height: 50px;
+  background: #666;
+  color: #fff;
+}
+
+.question {
+  padding: 0 0 40px 0;
+}
+
+.question-text {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 19px;
+  padding-bottom: 10px;
+}
+
+.picture {
+  padding-bottom: 15px;
+}
+
+.name {
+  padding: 0 25px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+}
+
+.address {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 300;
+  padding: 0 0 40px 0;
+}
+
+.rating {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+}

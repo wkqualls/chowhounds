@@ -47,18 +47,21 @@ function getData() {
     var yelpResults = response.businesses;
     for (i = 0; i < yelpResults.length; i++) {
       var tr = $('<tr class="yelpData">');
-      var Picture = $("<td>");
-      var Name = $("<td>");
-      var Address = $("<td>");
+      var Picture = $('<td class="picture">');
+      var Name = $('<td class="name">');
+      var Address = $('<td class="address">');
+      var Rating = $('<td class="rating">');
       var button = $(`<td id=${i} class = "button">`);
       Name.text(yelpResults[i].name);
       Address.text(`${yelpResults[i].location.display_address[0]} ${yelpResults[i].location.display_address[1]}`);
       Picture.prepend(`<img src=${yelpResults[i].image_url} />`);
+      Rating.text(yelpResults[i].rating)
       button.text('Click for approximate travel time')
       yelpTable.append(tr);
       tr.append(Picture);
       tr.append(Name);
       tr.append(Address);
+      tr.append(Rating)
       tr.append(button)
     }
 
