@@ -5,40 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Assets/style.css">
-    <title>Document</title>
+    <title>Chowhound</title>
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
 </head>
 <body>
- 
-    <form>
-<h1>Input Suggestion here</h1>
-<input type="checkbox" id="kosher" value="kosher" class="filter"> Kosher
- <input type="checkbox" id="vegan"  value="vegan" class="filter">Vegan
- <input type="checkbox" id="halal"  value="halal" class="filter">Halal
- <input type="checkbox" id="Vegetarian"  value="vegetarian" class="filter">Vegetarian
+        <header class="header"></header>
+        <section class="section">
+        <div class="container">
+
+        <div class="columns">
+            <div class = "column is-one-third">
+            <form>
+            <h1>Chowhounds</h1>
+            <h2>Do you have any dietary restrictions?</h2>
+            <input type="checkbox" id="kosher" value="kosher" class="filter"> Kosher<br>
+            <input type="checkbox" id="vegan"  value="vegan" class="filter">Vegan<br>
+            <input type="checkbox" id="halal"  value="halal" class="filter">Halal<br>
+            <input type="checkbox" id="Vegetarian"  value="vegetarian" class="filter">Vegetarian<br>
+
+            <h3>How much are you willing to spend?</h3>
+            <input type="checkbox" id="$" value="$" class="filter"> $<br>
+            <input type="checkbox" id="$$" value="$$" class="filter"> $$<br>
+            <input type="checkbox" id="$$$" value="$$$" class="filter"> $$$<br>
+            <input type="checkbox" id="$$$$" value="$$$$" class="filter"> $$$$<br>
+
+            <h4>Craving anything specific?</h4>
+            <input type="checkbox" id="Japanese" value="Japanese" class="filter">Japanese<br>
+            <input type="checkbox" id="Chinese" value="Chinese" class="filter">Chinese<br>
+            <input type="checkbox" id="Mexican" value="Mexican" class="filter">Mexican<br>
+            <input type="checkbox" id="Thai" value="Thai" class="filter">Thai<br>
+            <input type="checkbox" id="Burgers/American" value="Burgers/American" class="filter">Burgers/American<br>
+
+            <h5>How far are you willing to travel?</h5>
+            <input type="checkbox" id="Driving (5Mi.)" value="Driving (5Mi.)" class="filter">Driving (5Mi.)<br>
+            <input type="checkbox" id="Biking (2Mi.)" value="Biking (2Mi.)" class="filter">Biking (2Mi.)<br>
+            <input type="checkbox" id="Walking (1Mi.)" value="Walking (1Mi.)" class="filter">Walking (1Mi.)<br>
+            <input type="checkbox" id="Within 4 blocks" value="Within 4 blocks" class="filter">Within 4 blocks<br>
+            <input type="checkbox" id="Bird's-eye veiw" value="Bird's-eye veiw" class="filter">Bird's-eye veiw<br>
 
 
-<h2> Zipcode</h2>
-<input type="number" id="zipcode">
-<label for="zipcode"></label>
-<input type="submit" id="submit">
-
-</form> 
 
 
-<h3>Possible filters we can use</h3>
-<a href="https://www.yelp.com/developers/documentation/v3/all_category_list" target="_blank"> Scroll to the restaurants section</a>
+
+            
 
 
-<table class= "yelpTable">
-    <tr>
-        <th>Name</th>
-        <th>Picture</th>
-        <th>Address</th>
-    </tr>
-</table>
+            <h6> Zipcode</h6>
+            <input type="number" id="zipcode">
+            <label for="zipcode"></label>
+            <input type="submit" id="submit">
+
+            </form> 
+
+            <h5>Possible filters we can use</h5>
+            <a href="https://www.yelp.com/developers/documentation/v3/all_category_list" target="_blank"> Scroll to the restaurants section</a>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        </div>
+        
+        <div class="column is-one-third">
+            <table class= "yelpTable">
+                <tr>
+                    <th>Picture</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                </tr>
+                        </table>
+                    </div>
+        <div class="column is-one-third"></div>
+        </div>
+        </section>
+        <footer class="footer"></footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./Assets/script.js"></script>
 </body>
 </html>

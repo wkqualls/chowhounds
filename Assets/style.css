@@ -1,0 +1,8 @@
+body{
+    margin: 0;
+  } 
+  .header, .footer{
+    height: 50px;
+    background: #666;
+    color: #fff;
+  }
