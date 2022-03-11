@@ -17,7 +17,7 @@ var apiKey ="qwj2k9eaDr3NbcCMKw0KTm_47GpkQNJ_5WvuSP4Rcm2cXnZVqW25X8HngDG9VHMMmMw
 function getYelp() {
   var requestObj = {
     'url': YURL,
-    'data': {term: 'restaurants', location: '60640', categories:`${filterResults.join()}`},
+    'data': {term: 'restaurants', location: zipcode.value, categories:`${filterResults.join()}`},
     headers: {'Authorization':`Bearer ${apiKey}`}
   }
 
@@ -47,6 +47,7 @@ function getYelp() {
 
 submit.addEventListener("click", function (event) {
   event.preventDefault();
+
   
   for (i = 0; i < filter.length; i++) {
     if (filter[i].checked) {
@@ -62,17 +63,3 @@ submit.addEventListener("click", function (event) {
 });
 
 
-function addRestaurants() {
-
-  var businesses = yelpResults[0];
-  for (i=0;i<response.length;i++)
-    var tr = $('<tr>');
-    var Name = $('<td>');
-    var Picture = $('<td>');
-    var Address = $('<td>');
-
-    Name.text(businesses[i].name)
-    console.log(Name)
-
-
-}
