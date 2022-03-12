@@ -5,19 +5,37 @@ body{
 
 .header {
   height: 115px;
-  width: 100%;
   position: sticky;
   background: #fdf7ea;
   color: #fff;
   background-image: url("./halftone-burst.png");
   background-size: contain;
   background-repeat: no-repeat;
+  border-bottom: solid 3px #fff;
 }
 
 #bottom {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+#main-section {
+  background-color: #6fc7c4;
+}
+
+#column-left-style {
+  background-color: #fdf7ea;
+  margin-right: 30px;
+  
+}
+
+#column-right-style {
+  background-color: #fdf7ea;
+}
+
+.column {
+  border-radius: 25px!important;
 }
 
 .question {
