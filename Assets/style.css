@@ -3,10 +3,21 @@ body{
   font-family: 'Barlow', sans-serif;
 } 
 
-.header, .footer{
-  height: 50px;
-  background: #666;
+.header {
+  height: 115px;
+  width: 100%;
+  position: sticky;
+  background: #fdf7ea;
   color: #fff;
+  background-image: url("./halftone-burst.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .question {
@@ -41,3 +52,4 @@ body{
   font-family: 'Barlow', sans-serif;
   font-weight: 600;
 }
+
