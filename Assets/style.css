@@ -3,15 +3,22 @@ body{
   font-family: 'Barlow', sans-serif;
 } 
 
-.header {
+.navbar {
   height: 115px;
   position: sticky;
-  background: #fdf7ea;
-  color: #fff;
-  background-image: url("./halftone-burst.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  border-bottom: solid 3px #fff;
+  background: #fdf7ea!important;
+  background-image: url("./halftone-burst.png")!important;
+  background-size: contain!important;
+  background-repeat: no-repeat!important;
+  border-bottom: solid 3px #fff!important;
+  padding-right: 50px!important;
+}
+
+.navbar-link, a.navbar-item {
+  color: #6fc7c4!important;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 #bottom {
