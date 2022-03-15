@@ -1,6 +1,7 @@
 // Yelp Client ID: wp7597Dfcw2BqYz9TuhdRg
 // Yelp API Key: API Key: qwj2k9eaDr3NbcCMKw0KTm_47GpkQNJ_5WvuSP4Rcm2cXnZVqW25X8HngDG9VHMMmMw09XY5gJ9LrYFY8BPtBP0dd5B3ZHIrvfKyFCM81TmKSn4m6FCV9AIkZhQoYnYx
 
+
 var yelpResults = [];
 var submit = document.querySelector("#submit");
 var form = document.querySelector('#formQuestions');
@@ -11,7 +12,21 @@ var zipcode_form = document.querySelector("#zipcode");
 var zipcode = "";
 
 
+// JS for accordion functionality
+var acc = document.getElementsByClassName("accordion");
+var i;
 
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
 
 // Getting User Location
 
