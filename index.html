@@ -1,109 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Assets/style.css">
     <title>Chowhound</title>
-    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600&family=Barlow:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600&family=Barlow:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <img src="Assets/chowhound-logo.png" alt="Chowhound: Track down what you crave" width="375" id="bottom">
         </div>
-        <div class="navbar-end"><a class="navbar-item" href="#">About Us</a><a class="navbar-item" href="#">Favorites</a></div>
-      </nav>
+        <div class="navbar-end"><a class="navbar-item" href="#">About Us</a><a class="navbar-item"
+                href="#">Favorites</a></div>
+    </nav>
 
-        <section class="section" id="main-section">
+    <section class="section" id="main-section">
         <div class="container">
+            <div class="columns">
+                <div class="column is-quarter">
+                    <form id="formQuestions">
 
-        <div class="columns">
-            <div class = "column is-quarter">
-            <form id="formQuestions">
+                        <div class="question">
+                            <p class="question-text">Zipcode</p>
+                            <input type="number" id="zipcode">
+                            <label for="zipcode"></label>
+                            <input type="submit" id="submit">
+                        </div>
 
-            <div class="question">
-            <p class="question-text">Do you have any dietary restrictions?</p>
-            <input type="checkbox" id="kosher" value="kosher" class="filter"> Kosher<br>
-            <input type="checkbox" id="vegan"  value="vegan" class="filter"> Vegan<br>
-            <input type="checkbox" id="vegetarian"  value="vegetarian" class="filter"> Vegetarian<br>
-            <input type="checkbox" id="halal"  value="halal" class="filter"> Halal<br>
-            <input type="checkbox" id="gluten_free"  value="gluten_free" class="filter">Gluten Free<br>
+                        <div class="question">
+                            <button class="accordion" class="question-text">Do you have any dietary
+                                restrictions?</button>
+                            <div class="panel">
+                                <input type="checkbox" id="kosher" value="kosher" class="filter"> Kosher<br>
+                                <input type="checkbox" id="vegan" value="vegan" class="filter"> Vegan<br>
+                                <input type="checkbox" id="vegetarian" value="vegetarian" class="filter"> Vegetarian<br>
+                                <input type="checkbox" id="halal" value="halal" class="filter"> Halal<br>
+                                <input type="checkbox" id="gluten_free" value="gluten_free" class="filter">Gluten
+                                Free<br>
+                            </div>
+
+                            <!-- <div class="question"> -->
+                                <button class="accordion" class="question-text">How much are you willing to
+                                    spend?</button>
+                                <div class="panel">
+                                    <input type="checkbox" id="$" value="$" class="filter"> $<br>
+                                    <input type="checkbox" id="$$" value="$$" class="filter"> $$<br>
+                                    <input type="checkbox" id="$$$" value="$$$" class="filter"> $$$<br>
+                                    <input type="checkbox" id="$$$$" value="$$$$" class="filter"> $$$$<br>
+                                </div>
+                            <!-- </div> -->
+
+                            <!-- <div class="question"> -->
+                                <button class="accordion" class="question-text">Craving something specific?</button>
+                                <div class="panel">
+                                    <input type="checkbox" id="greek" value="greek" class="filter">Greek<br>
+                                    <input type="checkbox" id="polish" value="polish" class="filter">Polish<br>
+                                    <input type="checkbox" id="italian" value="italian" class="filter">Italian<br>
+                                    <input type="checkbox" id="japanese" value="japanese" class="filter">Japanese<br>
+                                    <input type="checkbox" id="chinese" value="chinese" class="filter">Chinese<br>
+                                    <input type="checkbox" id="mexican" value="mexican" class="filter">Mexican<br>
+                                    <input type="checkbox" id="Thai" value="Thai" class="filter">Thai<br>
+                                    <input type="checkbox" id="mediterranean" value="mediterranean"
+                                        class="filter">Mediterranean<br>
+                                    <input type="checkbox" id="mideastern" value="mideastern" class="filter">Middle
+                                    Eastern<br>
+                                    <input type="checkbox" id="newamerican" value="newamerican"
+                                        class="filter">American<br>
+                                    <input type="checkbox" id="southern" value="southern" class="filter">Southern<br>
+                                    <input type="checkbox" id="seafood" value="seafood" class="filter">Seafood<br>
+                                    <input type="checkbox" id="bbq" value="bbq" class="filter">Barbeque<br>
+                                    <input type="checkbox" id="pizza" value="pizza" class="filter">Pizza<br>
+                                </div>
+                            <!-- </div> -->
+
+                            <!-- <div class="question"> -->
+                                <button class="accordion" class="question-text">What is your vibe?</button>
+                                <div class="panel">
+                                    <input type="checkbox" id="breakfast_brunch" value="breakfast_brunch"
+                                        class="filter">Breakfast & Brunch<br>
+                                    <input type="checkbox" id="diners" value="diners" class="filter">Diners<br>
+                                    <input type="checkbox" id="foodtrucks" value="foodtrucks" class="filter">Food
+                                    Trucks<br>
+                                    <input type="checkbox" id="juicebars" value="juicebars" class="filter">Juice Bars &
+                                    Smoothies<br>
+                                    <input type="checkbox" id="sushi" value="sushi" class="filter">Sushi Bars<br>
+                                    <input type="checkbox" id="bars" value="bars" class="filter">Bars<br>
+                                    <input type="checkbox" id="coffeeshops" value="coffeeshops"
+                                        class="filter">Coffeeshops<br>
+                                    <input type="checkbox" id="pubs" value="pubs" class="filter">Pubs<br>
+                                    <input type="checkbox" id="comfortfood" value="comfortfood" class="filter">Comfort
+                                    Food<br>
+                                    <input type="checkbox" id="hotpot" value="hotpot" class="filter">Hot Pot<br>
+                                </div>
+                            <!-- </div> -->
+                            <!-- OG -->
+                            <!-- <div class="question">
+                                <p class="question-text">Do you have any dietary restrictions?</p>
+
+                                <input type="checkbox" id="kosher" value="kosher" class="filter"> Kosher<br>
+                                <input type="checkbox" id="vegan" value="vegan" class="filter"> Vegan<br>
+                                <input type="checkbox" id="vegetarian" value="vegetarian" class="filter"> Vegetarian<br>
+                                <input type="checkbox" id="halal" value="halal" class="filter"> Halal<br>
+                                <input type="checkbox" id="gluten_free" value="gluten_free" class="filter">Gluten
+                                Free<br>
+
+                            </div> -->
+
+
+                            <!-- 
+                            <div class="question">
+                                <button class="question-text" class="accordion">How much are you willing to
+                                    spend?</button>
+                                <div class="panel">
+                                    <input type="checkbox" id="$" value="$" class="filter"> $<br>
+                                    <input type="checkbox" id="$$" value="$$" class="filter"> $$<br>
+                                    <input type="checkbox" id="$$$" value="$$$" class="filter"> $$$<br>
+                                    <input type="checkbox" id="$$$$" value="$$$$" class="filter"> $$$$<br>
+                                </div>
+                            </div> -->
+
+                            <!-- <div class="question">
+                                <p class="question-text">Craving something specific?</p>
+                                <input type="checkbox" id="greek" value="greek" class="filter">Greek<br>
+                                <input type="checkbox" id="polish" value="polish" class="filter">Polish<br>
+                                <input type="checkbox" id="italian" value="italian" class="filter">Italian<br>
+                                <input type="checkbox" id="japanese" value="japanese" class="filter">Japanese<br>
+                                <input type="checkbox" id="chinese" value="chinese" class="filter">Chinese<br>
+                                <input type="checkbox" id="mexican" value="mexican" class="filter">Mexican<br>
+                                <input type="checkbox" id="Thai" value="Thai" class="filter">Thai<br>
+                                <input type="checkbox" id="mediterranean" value="mediterranean"
+                                    class="filter">Mediterranean<br>
+                                <input type="checkbox" id="mideastern" value="mideastern" class="filter">Middle
+                                Eastern<br>
+                                <input type="checkbox" id="newamerican" value="newamerican" class="filter">American<br>
+                                <input type="checkbox" id="southern" value="southern" class="filter">Southern<br>
+                                <input type="checkbox" id="seafood" value="seafood" class="filter">Seafood<br>
+                                <input type="checkbox" id="bbq" value="bbq" class="filter">Barbeque<br>
+                                <input type="checkbox" id="pizza" value="pizza" class="filter">Pizza<br>
+                            </div>
+
+                            <div class="question">
+                                <p class="question-text">What is your vibe?</p>
+                                <input type="checkbox" id="breakfast_brunch" value="breakfast_brunch"
+                                    class="filter">Breakfast & Brunch<br>
+                                <input type="checkbox" id="diners" value="diners" class="filter">Diners<br>
+                                <input type="checkbox" id="foodtrucks" value="foodtrucks" class="filter">Food Trucks<br>
+                                <input type="checkbox" id="juicebars" value="juicebars" class="filter">Juice Bars &
+                                Smoothies<br>
+                                <input type="checkbox" id="sushi" value="sushi" class="filter">Sushi Bars<br>
+                                <input type="checkbox" id="bars" value="bars" class="filter">Bars<br>
+                                <input type="checkbox" id="coffeeshops" value="coffeeshops"
+                                    class="filter">Coffeeshops<br>
+                                <input type="checkbox" id="pubs" value="pubs" class="filter">Pubs<br>
+                                <input type="checkbox" id="comfortfood" value="comfortfood" class="filter">Comfort
+                                Food<br>
+                                <input type="checkbox" id="hotpot" value="hotpot" class="filter">Hot Pot<br>
+
+                            </div> -->
+
+
+
+
+
+
+                     
+                    </form>
+
+                    <h5>Possible filters we can use</h5>
+                    <a href="https://www.yelp.com/developers/documentation/v3/all_category_list" target="_blank"> Scroll
+                        to the restaurants section</a>
+
+                </div>
+
+                <div class="column is-three-quarters" style="background: #fff;">
+                    <table class="yelpTable">
+
+                </div>
+                <!-- <div class="column is-one-quarter"></div> -->
             </div>
-
-            <div class="question">
-            <p class="question-text">How much are you willing to spend?</p>
-            <input type="checkbox" id="$" value="$" class="filter"> $<br>
-            <input type="checkbox" id="$$" value="$$" class="filter"> $$<br>
-            <input type="checkbox" id="$$$" value="$$$" class="filter"> $$$<br>
-            <input type="checkbox" id="$$$$" value="$$$$" class="filter"> $$$$<br>
-            </div>
-
-            <div class="question">
-            <p class="question-text">Craving something specific?</p>
-            <input type="checkbox" id="greek" value="greek" class="filter">Greek<br>
-            <input type="checkbox" id="polish" value="polish" class="filter">Polish<br>
-            <input type="checkbox" id="italian" value="italian" class="filter">Italian<br>
-            <input type="checkbox" id="japanese" value="japanese" class="filter">Japanese<br>
-            <input type="checkbox" id="chinese" value="chinese" class="filter">Chinese<br>
-            <input type="checkbox" id="mexican" value="mexican" class="filter">Mexican<br>
-            <input type="checkbox" id="Thai" value="Thai" class="filter">Thai<br>
-            <input type="checkbox" id="mediterranean" value="mediterranean" class="filter">Mediterranean<br>
-            <input type="checkbox" id="mideastern" value="mideastern" class="filter">Middle Eastern<br>
-            <input type="checkbox" id="newamerican" value="newamerican" class="filter">American<br>
-            <input type="checkbox" id="southern" value="southern" class="filter">Southern<br>
-            <input type="checkbox" id="seafood" value="seafood" class="filter">Seafood<br>
-            <input type="checkbox" id="bbq" value="bbq" class="filter">Barbeque<br>
-            <input type="checkbox" id="pizza" value="pizza" class="filter">Pizza<br>
-            </div>
-
-            <div class="question">
-            <p class="question-text">What is your vibe?</p>
-            <input type="checkbox" id="breakfast_brunch" value="breakfast_brunch" class="filter">Breakfast & Brunch<br>
-            <input type="checkbox" id="diners" value="diners" class="filter">Diners<br>
-            <input type="checkbox" id="foodtrucks" value="foodtrucks" class="filter">Food Trucks<br>
-            <input type="checkbox" id="juicebars" value="juicebars" class="filter">Juice Bars & Smoothies<br>
-            <input type="checkbox" id="sushi" value="sushi" class="filter">Sushi Bars<br>
-            <input type="checkbox" id="bars" value="bars" class="filter">Bars<br>
-            <input type="checkbox" id="coffeeshops" value="coffeeshops" class="filter">Coffeeshops<br>
-            <input type="checkbox" id="pubs" value="pubs" class="filter">Pubs<br>
-            <input type="checkbox" id="comfortfood" value="comfortfood" class="filter">Comfort Food<br>
-            <input type="checkbox" id="hotpot" value="hotpot" class="filter">Hot Pot<br>
-
-             </div>
-
-
-
-
-            
-
-            <div class="question">
-            <p class="question-text">Zipcode</p>
-            <input type="number" id="zipcode">
-            <label for="zipcode"></label>
-            <input type="submit" id="submit">
-            </div>
-            </form> 
-
-            <h5>Possible filters we can use</h5>
-            <a href="https://www.yelp.com/developers/documentation/v3/all_category_list" target="_blank"> Scroll to the restaurants section</a>
-
-        </div>
-        
-        <div class="column is-three-quarters" style="background: #fff;">
-            <table class= "yelpTable">
-    
-                    </div>
-        <!-- <div class="column is-one-quarter"></div> -->
-        </div>
-        </section>
-        <!-- <footer class="footer"></footer> -->
+    </section>
+    <!-- <footer class="footer"></footer> -->
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./Assets/script.js"></script>
 </body>
-</html>
 
+</html>
