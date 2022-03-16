@@ -14,7 +14,6 @@ var zipcode = "";
 
 // JS for accordion functionality
 var acc = document.getElementsByClassName("accordion");
-var i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
@@ -97,8 +96,8 @@ if(yelpResults.length===0) {
     var Name = $('<td class="name">');
     var Address = $('<td class="address">');
     var Rating = $('<td class="rating">');
-    var categories = $('<td>')
-    var button = $(`<td id=${i} class = "button">`);
+    var categories = $('<td class="categories">')
+    var button = $(`<td id=${i} class = "button is-small">`);
     Name.text(yelpResults[i].name);
     Address.text(`${yelpResults[i].location.display_address[0]} ${yelpResults[i].location.display_address[1]}`);
     Picture.prepend(`<img src=${yelpResults[i].image_url} />`);

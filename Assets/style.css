@@ -93,16 +93,31 @@ body{
   padding: 0 25px;
   font-family: 'Barlow', sans-serif;
   font-weight: 600;
+  display: block;
+  clear: both;
 }
 
 .address {
   font-family: 'Barlow', sans-serif;
   font-weight: 300;
-  padding: 0 0 40px 0;
+  padding: 0 25px 40px 25px;
+  display: block;
+  clear: both;
+  font-size: 14px;
 }
 
 .rating {
   font-family: 'Barlow', sans-serif;
   font-weight: 600;
+  padding-right: 20px;
 }
 
+.categories {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.button {
+  border-radius: 5px!important;
+}
