@@ -9,11 +9,19 @@ var checkedFilters = [];
 var price = "1,2,3,4";
 var zipcode_form = document.querySelector("#zipcode");
 var zipcode = "";
-var favName = [];
-var favAddress = [];
-var favPicture = [];
-var favCategories = [];
-var favRating = [];
+
+if (localStorage.getItem("Name") != null) {
+  var favName = localStorage.getItem("Name").split(" ,");
+  var favAddress = localStorage.getItem("Address").split(" ,");
+  var favPicture = localStorage.getItem("Picture").split(" ,");
+  var favRating = localStorage.getItem("Rating").split(" ,");
+} else {
+  var favName = [];
+  var favAddress = [];
+  var favPicture = [];
+  var favCategories = [];
+  var favRating = [];
+}
 
 // JS for accordion functionality
 var acc = document.getElementsByClassName("accordion");
@@ -107,8 +115,12 @@ function createTable() {
       var Address = $('<td class="address">');
       var Rating = $('<td class="rating">');
       var categories = $('<td class="categories">');
-      var button = $(`<td id=${i} style = "display:block; clear:both; margin-bottom: 10px" class = "button is-small">`);
-      var favorites = $(`<td style = "display:block; clear:both" id=${i} class = "favorites button is-small">`);
+      var button = $(
+        `<td id=${i} style = "display:block; clear:both; margin-bottom: 10px" class = "button-travel is-small">`
+      );
+      var favorites = $(
+        `<td style = "display:block; clear:both" id=${i} class = "favorites button is-small">`
+      );
       Name.text(yelpResults[i].name);
       Address.text(
         `${yelpResults[i].location.display_address[0]} ${yelpResults[i].location.display_address[1]}`
@@ -159,7 +171,7 @@ function createTable() {
 }
 
 function getMaps() {
-  $(".button").click(function (event) {
+  $(".button-travel").click(function (event) {
     var item_num = $(event.target).attr("id");
     // Location of destination from YELP
     var restaurantCoordinates = `${yelpResults[item_num].coordinates.latitude},${yelpResults[item_num].coordinates.longitude}`;
