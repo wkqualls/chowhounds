@@ -107,8 +107,8 @@ function createTable() {
       var Address = $('<td class="address">');
       var Rating = $('<td class="rating">');
       var categories = $('<td class="categories">');
-      var button = $(`<td id=${i} class = "button is-small">`);
-      var favorites = $(`<td id=${i} class = "favorites">`);
+      var button = $(`<td id=${i} style = "display:block; clear:both; margin-bottom: 10px" class = "button is-small">`);
+      var favorites = $(`<td style = "display:block; clear:both" id=${i} class = "favorites button is-small">`);
       Name.text(yelpResults[i].name);
       Address.text(
         `${yelpResults[i].location.display_address[0]} ${yelpResults[i].location.display_address[1]}`
