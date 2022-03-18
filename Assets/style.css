@@ -31,7 +31,7 @@ body{
 
 #main-section {
   background-color: #6fc7c4;
-  height: 100vh;
+  height: 10000vh;
   background-image: url("Assets/pawprints.png");
   background-repeat: repeat;
 }
@@ -69,7 +69,6 @@ body{
 }
 
 .mydetails > summary {
-  list-style: none;
   font-weight: 600;
   padding-right: 10px;
 }

@@ -23,6 +23,14 @@ if (localStorage.getItem("Name") != null) {
   var favRating = [];
 }
 
+// Close Modals
+
+$(".modal-close").on('click', function(event) {
+  console.log($(event.target).parent())
+  $(event.target).parent().removeClass("is-active")
+  
+  })
+
 // JS for accordion functionality
 var acc = document.getElementsByClassName("accordion");
 
@@ -49,7 +57,9 @@ if (navigator.geolocation) {
       userCord = `${lat},${lng}`;
     },
     function (err) {
-      alert(
+
+      $(".no-location").addClass("is-active");
+      $(".no-location-content").text(
         "NOTE: YOU HAVE DISABLED LOCATION SERVICES. LOCATION-BASED FEATURES WILL NOT WORK FOR THIS APP"
       );
     }
@@ -105,7 +115,13 @@ function createTable() {
     yelpResults = yelpData;
   }
   if (yelpResults.length === 0) {
-    alert("No Results");
+
+
+     $(".no-result").addClass("is-active");
+    $(".no-result-content").text(
+      "No Results. Either your Zipcode is incorrect or no restaurant with such filters exist"
+    );
+
   } else {
     console.log(yelpResults);
 
@@ -126,7 +142,19 @@ function createTable() {
       Address.text(
         `${yelpResults[i].location.display_address[0]} ${yelpResults[i].location.display_address[1]}`
       );
-      Picture.prepend(`<img src=${yelpResults[i].image_url} />`);
+
+
+
+      Picture.css('background-image', `url('  ${yelpResults[i].image_url} ')`)
+      Picture.height(300)
+      Picture.width(300)
+      Picture.css('background-size', 'cover')
+      // Picture.prepend(`<img src=${yelpResults[i].image_url} />`);
+
+
+
+
+
       Rating.text(yelpResults[i].rating);
       button.text("Click for approximate travel time");
       favorites.text("Add to Favorites");
@@ -146,6 +174,10 @@ function createTable() {
       }
     }
     $(".favorites").click(function (event) {
+
+      console.log(favorites)
+      $(event.target).text("Added");
+      
       var fav_num = $(event.target).attr("id");
       for (i = 0; i < yelpResults.length; i++) {
         if (i == fav_num) {
@@ -155,7 +187,7 @@ function createTable() {
             `${yelpResults[i].location.display_address[0]} ${yelpResults[i].location.display_address[1]} `
           );
 
-          favPicture.push(`<img src=${yelpResults[i].image_url} /> `);
+          favPicture.push(`${yelpResults[i].image_url}  `);
           favRating.push(`${yelpResults[i].rating} `);
 
           localStorage.setItem("Name", favName);

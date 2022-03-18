@@ -1,153 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  background: #fdf7ea!important;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-.column {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 12px;
-  padding: 0 8px;
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-}
-
-.about-section {
-  padding: 50px;
-  text-align: center;
-  background-color:#6fc7c4;
-  color: black;
-}
-
-.container {
-  padding: 0 16px;
-}
-
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.title {
-  color: #6fc7c4;
-}
-
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
-
-
-
-.button:hover {
-  background-color: #555;
-}
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
-</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
 </head>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background: #FDF7EA !important;
+    }
+
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    .column {
+      float: left;
+      width: 33.3%;
+      margin-bottom: 12px;
+      padding: 0 8px;
+      color: #6FC7C4;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin: 8px;
+    }
+
+    .about-section {
+      padding: 50px;
+      text-align: center;
+      background-color: #6fc7c4;
+      color: #DD3926;
+    }
+
+    .container {
+      padding: 0 16px;
+    }
+
+    .container::after,
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .title {
+      color: #dd3926;
+    }
+
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+    }
+  </style>
+</head>
+
 <body>
-
-<div class="about-section">
-  <h1>About Us Page</h1>
-  <p>Nothwestern Coding Bootcamp Project One</p>
-  <p>Creators of Chowhounds. Helping friends and family satify their hunger.</p>
-</div>
-
-<h2 style="text-align:center">Team Number 4: Food Finders</h2>
-
-<div class="row">
-  <div class="column">
-    <div class="card">
-      
-      <div class="container">
-        <h2>Natalie Triffo</h2>
-        
-        <p class="title">Nothwestern Coding BootCamp Student</p>
-        <p class="title">Bartender</p>
-        <img src="./IMG_1796.JPG" alt="NT PIC" width="auto" height="333">
-        <p>My name is Natalie Triffo, I am 21 years old. I am a student as well as a full time bartender. I recently graduated from Oakton community College with my Associates in Business. After graduation, I decided to continue with my academic journey and applied to do the Coding Bootcamp. When I am not in class or working I enjoy spending time with my friends and family exploring the city and finding new fun things to do!</p>
-        <p>natalietriffo@gmail.com</p>
-        
-        <p><button class="button">Contact</button></p>
+  <div class="about-section">
+    <h1>About Us</h1>
+  </div>
+  <h2 style="text-align:center">Nothwestern Coding Bootcamp: Project One
+  </h2>
+  <h3 style="text-align:center">Team 4 "Food Finders" Chowhound: Helping friends and family satify their hunger</h3>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <div class="container">
+          <h2>Natalie Triffo</h2>
+          <p class="title">Nothwestern Coding BootCamp Student</p>
+          <p class="title">Bartender</p>
+          <img src="./IMG_1796.JPG" alt="NT PIC" width="auto" height="333">
+          <p>My name is Natalie Triffo, I am 21 years old. I am a student as well as a full time bartender. I recently
+            graduated from Oakton community College with my Associates in Business. After graduation, I decided to
+            continue with my academic journey and applied to do the Coding Bootcamp. When I am not in class or working I
+            enjoy spending time with my friends and family exploring the city and finding new fun things to do!</p>
+          <p><a href="mailto:nattriffo@gmail.com">Email Natalie</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <div class="container">
+          <h2>Carissa Lytle</h2>
+          <p class="title">Northwestern Coding Bootcamp Student</p>
+          <p class="title">Graphic Designer</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p <p><a
+            href="mailto:carissa@rightanglestudio.com">Email Carissa</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <div class="container">
+          <h2>Will Qualls</h2>
+          <p class="title">Northwestern Coding Bootcamp Student</p>
+          <p class="title">Process Support analyst</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p><a href="mailto:wmknqualls@gmail.com">Email Will</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <div class="container">
+          <h2>Abeer Naeem</h2>
+          <p class="title">Northwestern Coding Bootcamp Student</p>
+          <p class="title">Mecanical Engineer</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p><a href="mailto:abeernaeem6@gmail.com">Email Abeer</a></p>
+        </div>
       </div>
     </div>
   </div>
-
-  <div class="column">
-    <div class="card">
-      
-      <div class="container">
-        <h2>Carissa Lytle</h2>
-        <p class="title">Northwestern Coding Bootcamp Student</p>
-        <p class="title">Graphic Designer</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>carissa@rightanglestudio.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      
-      <div class="container">
-        <h2>Will Qualls</h2>
-        <p class="title">Northwestern Coding Bootcamp Student</p>
-        <p class="title">Process Support analyst</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>wmknqualls@gmail.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="card">
-      
-      <div class="container">
-        <h2>Abeer Naeem</h2>
-        <p class="title">Northwestern Coding Bootcamp Student</p>
-        <p class="title">Mecanical Engineer</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>abeernaeem6@gmail.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-</div>
-<footer>
-  <p><a href="http://127.0.0.1:5500/index.html">Navigate back to our homepage!</a></p>
-</footer>
+  <footer>
+    <p><a href="http://127.0.0.1:5500/index.html">Navigate back to our homepage!</a></p>
+  </footer>
 </body>
+
 </html>
