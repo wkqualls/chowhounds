@@ -87,6 +87,7 @@ function getYelp() {
 
 function createTable() {
   var tableDiv = $("<div id = deleteTable>");
+  tableDiv.css('background-color', 'white')
 
   console.log(checkedFilters[0]);
   console.log(checkedFilters.length);
@@ -247,3 +248,5 @@ submit.addEventListener("click", function (event) {
 
   getYelp();
 });
+
+
