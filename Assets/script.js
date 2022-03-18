@@ -248,3 +248,5 @@ submit.addEventListener("click", function (event) {
 
   getYelp();
 });
+
+
