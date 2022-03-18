@@ -1,8 +1,10 @@
 var table = $(".FavoritesTable");
 var FavName = localStorage.getItem("Name").split(" ,");
 var FavAddress = localStorage.getItem("Address").split(" ,");
-var FavPicture = localStorage.getItem("Picture").split(" ,");
+var FavPicture = localStorage.getItem("Picture").split(",");
 var FavRating = localStorage.getItem("Rating").split(" ,");
+console.log(FavPicture)
+
 
 function startFavorites() {
 
@@ -16,7 +18,15 @@ function startFavorites() {
         var Rating = $('<td class="rating">');
 
 
-        Picture.prepend(FavPicture[i])
+      
+        Picture.css('background-image', `url(' ${FavPicture[i]} ')`)
+        Picture.height(300)
+        Picture.width(300)
+        Picture.css('background-size', 'cover')
+
+        console.log(FavPicture[i])
+
+        // Picture.prepend(FavPicture[i])
         Name.text(FavName[i])
         Address.text(FavAddress[i])
         Rating.text(`${FavRating[i]}/5`)
