@@ -155,7 +155,7 @@ function createTable() {
 
 
 
-      Rating.text(yelpResults[i].rating);
+      Rating.text(`${yelpResults[i].rating}/5`);
       button.text("Click for approximate travel time");
       favorites.text("Add to Favorites");
 
