@@ -133,10 +133,10 @@ function createTable() {
       var Rating = $('<td class="rating">');
       var categories = $('<td class="categories">');
       var button = $(
-        `<td id=${i} style = "display:block; clear:both; margin-bottom: 10px" class = "button is-small button-travel">`
+        `<td id=${i} style = "display:block; clear:both; margin: 0 15px 10px 25px" class = "button is-small button-travel">`
       );
       var favorites = $(
-        `<td style = "display:block; clear:both" id=${i} class = "favorites button is-small">`
+        `<td style = "display:block; clear:both; margin: 0 15px 30px 25px" id=${i} class = "favorites button is-small">`
       );
       Name.text(yelpResults[i].name);
       Address.text(

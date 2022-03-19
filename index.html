@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Assets/style.css">
     <title>Chowhound</title>
+    <link rel="icon" type="image/x-icon" href="Assets/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600&family=Barlow:wght@300;400;600;700&display=swap"
@@ -13,13 +14,15 @@
 </head>
 
 <body>
-    <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <img src="Assets/chowhound-logo.png" alt="Chowhound: Track down what you crave" width="375" id="bottom">
-        </div>
-        <div class="navbar-end"><a class="navbar-item" href="about.html">About Us</a><a class="navbar-item"
-                href="Assets/favorites.html">Favorites</a></div>
-    </nav>
+    <div class="navigation">
+        <img src="Assets/chowhound-logo.png" alt="Chowhound: Track down what you crave" width="375" id="bottom">
+    </div>
+    <div class="navdiv">
+        <ul>
+        <li class="navlinks"><a href="about.html">About</a></li>
+        <li class="navlinks"><a href="Assets/favorites.html">Favorites</a></li>
+        </ul>
+    </div>
 
     <section class="section" id="main-section" style="background-image: url('Assets/pawprints.png');">
         <div class="container">

@@ -2,18 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Assets/style.css">
   <title>About Us</title>
+  <link rel="icon" type="image/x-icon" href="../Assets/favicon.png">
 </head>
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Barlow', sans-serif;
       margin: 0;
-      background: #FDF7EA !important;
     }
 
     html {
@@ -31,19 +32,21 @@
       width: 33.3%;
       margin-bottom: 12px;
       padding: 0 8px;
-      color: #6FC7C4;
     }
 
     .card {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       margin: 8px;
+      padding: 10px;
+      background-color:#fdf7ea;
+      border-radius:15px;
     }
 
     .about-section {
-      padding: 50px;
+      padding: 40px 0 10px 0;
       text-align: center;
-      background-color: #6fc7c4;
-      color: #DD3926;
+      color: #fdf7ea;
+      font-size:24px;
     }
 
     .container {
@@ -61,6 +64,11 @@
       color: #dd3926;
     }
 
+   .image {
+      width: 100%;
+      height: auto;
+    }
+
     @media screen and (max-width: 650px) {
       .column {
         width: 100%;
@@ -71,6 +79,16 @@
 </head>
 
 <body>
+  <div class="navigation">
+    <a href="../index.html"><img src="Assets/chowhound-logo.png" alt="Chowhound: Track down what you crave" width="375" id="bottom"></a>
+</div>
+<div class="navdiv-sub">
+    <ul>
+    <li class="navlinks"><a href="../Assets/favorites.html">Favorites</a></li>
+    <li class="navlinks"><a href="index.html">Home</a></li>
+    </ul>
+</div>
+<section id="main-section" style="background-image: url('../Assets/pawprints.png');">
   <div class="about-section">
     <h1>About Us</h1>
   </div>
@@ -84,7 +102,7 @@
           <h2>Natalie Triffo</h2>
           <p class="title">Nothwestern Coding BootCamp Student</p>
           <p class="title">Bartender</p>
-          <img src="./IMG_1796.JPG" alt="NT PIC" width="auto" height="333">
+          <img src="./IMG_1796.JPG" alt="NT PIC" width="auto" height="333" class="image">
           <p>My name is Natalie Triffo, I am 21 years old. I am a student as well as a full time bartender. I recently
             graduated from Oakton community College with my Associates in Business. After graduation, I decided to
             continue with my academic journey and applied to do the Coding Bootcamp. When I am not in class or working I
@@ -99,7 +117,8 @@
           <h2>Carissa Lytle</h2>
           <p class="title">Northwestern Coding Bootcamp Student</p>
           <p class="title">Graphic Designer</p>
-          <p>Some text that describes me lorem ipsum ipsum lorem.</p <p><a
+          <img src="./Assets/C-Lytle-Web-3.jpg" alt="NT PIC" width="auto" height="333" class="image">
+          <p>Hi, I'm Carissa. I hold a Marketing degree from DePaul University and a degree in Visual Communication from the School of the Art Institute of Chicago. I've always been passionate about design and I own a small graphic design agency based in Highland Park, Illinois called Right Angle Studio. I'm taking this bootcamp course to expand my coding skills in order to take on larger and more complex web development skills for my clients. When I'm not working or spending time with my daughters, I love running, spinning and going out with friends.</p><a
             href="mailto:carissa@rightanglestudio.com">Email Carissa</a></p>
         </div>
       </div>
@@ -127,9 +146,8 @@
       </div>
     </div>
   </div>
-  <footer>
-    <p><a href="http://127.0.0.1:5500/index.html">Navigate back to our homepage!</a></p>
-  </footer>
+</section>
+
 </body>
 
 </html>
