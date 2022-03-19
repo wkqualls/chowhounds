@@ -5,7 +5,9 @@ body{
   font-family: 'Barlow', sans-serif;
 } 
 
-.navbar {
+/* Navbar & Header CSS */
+
+.navigation {
   height: 115px;
   position: sticky;
   background: #fdf7ea!important;
@@ -16,11 +18,41 @@ body{
   padding-right: 50px!important;
 }
 
-.navbar-link, a.navbar-item {
+.navlinks a {
   color: #6fc7c4!important;
   font-family: 'Barlow', sans-serif;
   font-weight: 600;
   cursor: pointer;
+  text-decoration: none;
+}
+
+
+.navdiv {
+  position: fixed;
+  right: 50px;
+  top: 45px;
+  float:right;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+}
+
+.navdiv-sub {
+  position: fixed;
+  right: 50px;
+  top: 30px;
+  float:right;
+}
+
+.navdiv ul li {
+    display:inline-block;
+    float:left;
+    padding-left: 25px;
+}
+
+.navdiv-sub ul li {
+  display:inline-block;
+  float:left;
+  padding-left: 25px;
 }
 
 #bottom {
@@ -28,6 +60,8 @@ body{
   bottom: 0;
   left: 0;
 }
+
+/* Main Section Columns */
 
 #main-section {
   background-color: #6fc7c4;
@@ -50,6 +84,7 @@ body{
 }
 
 /* CSS FOR ACCORDION */
+
 .question {
   /* background-color: #6fc7c4!important; */
   color: #444;
@@ -86,6 +121,7 @@ body{
 
 .button {
   border-radius: 5px!important;
+  font-size:13px!important;
 }
 
 #submit {
@@ -134,15 +170,11 @@ body{
   border-radius: 15px;
 }
 
-.picture {
-  vertical-align: middle;
-  padding-top: 5px;
-}
-
 .name {
   padding: 10px 25px 0px 25px;
   font-family: 'Barlow', sans-serif;
   font-weight: 600;
+  font-size:18px;
   display: block;
   clear: both;
 }
@@ -150,26 +182,114 @@ body{
 .address {
   font-family: 'Barlow', sans-serif;
   font-weight: 300;
-  padding: 0 25px 40px 25px;
+  padding: 0 25px 0 25px;
   display: block;
   clear: both;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .rating {
   font-family: 'Barlow', sans-serif;
   font-weight: 600;
-  padding: 10px 25px 0px 25px;
+  display: block;
+  clear: both;
+  padding-left:25px;
 }
 
 .categories {
   font-family: 'Barlow', sans-serif;
   font-weight: 300;
-  font-size: 14px;
-  padding: 10px 25px 0px 25px;
+  font-size: 15px;
+  display: block;
+  clear: both;
+  padding-left:25px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .navlinks {
+    background-color: #fdf7ea;
+    list-style: none;
+  }
+
+  .navigation {
+    padding-right:0!important;
+  }
+
+  .navdiv {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    display:flex;
+    flex-direction: column;
+    z-index:40;
+  }
+  ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  li {
+    border-bottom: solid 3px #fff;
+  }
+  .navdiv ul li {
+    padding-left: 0!important;
+  }
+
+.questionzip {
+  padding-top:25px;
+  }
+
+.name {
+  padding: 0!important;
+  text-align: center;
+  }
+
+.address {
+  padding: 0!important;
+  text-align: center;
+  }
+
+.picture {
+  display: block;
+  clear: both;
+  margin: auto;
+}
+
+.rating {
+  padding-top: 0!important;
+  padding: 0!important;
+  text-align: center;
+}
+
+.categories {
+  padding:0!important;
+  text-align: center;
+}
+
+.favorites {
+  margin-bottom: 30px!important;
+}
+
+.travel-button {
+  margin-bottom: 5px!important;
+}
+
+.yelpData {
+  border:none!important;
+}
 }
 
 #deleteTable {
   padding: 15px;
   border-radius: 15px;
+}
+
+.search {
+  color: #fff;
 }
