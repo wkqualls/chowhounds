@@ -66,6 +66,7 @@ body{
 #main-section {
   background-color: #6fc7c4;
   height: 10000vh;
+  padding: 35px;
   background-image: url("Assets/pawprints.png");
   background-repeat: repeat;
 }
@@ -80,7 +81,7 @@ body{
 }
 
 .column {
-  border-radius: 12px!important;
+  border-radius: 15px!important;
 }
 
 /* CSS FOR ACCORDION */
@@ -120,7 +121,7 @@ body{
 /* Zip Code Input & Questions */
 
 .button {
-  border-radius: 5px!important;
+  border-radius: 15px!important;
   font-size:13px!important;
 }
 
@@ -162,6 +163,12 @@ body{
   padding-bottom: 5px;
 }
 
+.FavoritesTable {
+  background-color: #fdf7ea;
+  border-radius: 15px!important;
+  margin-right: 30px;
+  padding: 10px 10px 10px 10px;
+}
 
 /* Restaurant Table */
 
